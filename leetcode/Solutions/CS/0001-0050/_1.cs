@@ -14,18 +14,17 @@ namespace leetcode.Solutions.CS._0001_0050
             {
                Dictionary<int, int> hash = new Dictionary<int, int>();
 
-                int sum = 0;
-
                 for(int i = 0; i < nums.Length; i++) { 
-                    sum = target - nums[i];
-                    if (hash.ContainsValue(nums[i])) 
-                    {
 
-                        return new int[] {hash.FirstOrDefault(x => x.Value == nums[i]).Key, i};
-                    }
-                    else
+                    int sum = target - nums[i];
+
+                    if (hash.ContainsKey(sum)) 
                     {
-                       hash.Add(i, sum);
+                        return new int[] { hash[sum], i };
+                    }
+                    if (!hash.ContainsKey(nums[i]))
+                    {
+                        hash.Add(nums[i], i);
                     }
                 }
                 return new int[0];
