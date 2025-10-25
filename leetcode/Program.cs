@@ -15,7 +15,7 @@ namespace leetcode
         static void Main(string[] args)
         {
             var solution = new _1.Solution();
-            int[] nums = { 3,3 };
+            int[] nums = { 3, 2, 4 };
             solution.TwoSum(nums, 6);
         }
     }

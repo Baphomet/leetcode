@@ -13,9 +13,9 @@ namespace leetcode.Solutions.CS._0001_0050
             public int[] TwoSum(int[] nums, int target)
             {
                 int[] result = new int[2];
-                for (int i = 0; i < nums.Length; i++) 
+                for (int i = 0; i < nums.Length; i++)
                 {
-                    for (int j = 0; j < nums.Length; j++) 
+                    for (int j = 0; j < nums.Length; j++)
                     {
                         if (j == i)
                         {
