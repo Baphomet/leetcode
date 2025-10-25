@@ -29,11 +29,6 @@ namespace leetcode.Solutions.CS._0001_0050
                     {
                         result[0] = s;
                         result[1] = e;
-                        Console.WriteLine(s + "," + e);
-                        foreach (int n in result)
-                        {
-                            Console.WriteLine(n);
-                        }
                         break;
                     }
                 }
