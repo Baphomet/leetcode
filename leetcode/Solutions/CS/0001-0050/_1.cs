@@ -12,29 +12,24 @@ namespace leetcode.Solutions.CS._0001_0050
         {
             public int[] TwoSum(int[] nums, int target)
             {
-                var arr = nums.Select((value, index) => new { value, index })
-                    .OrderBy(x => x.value)
-                    .ToArray();
+               Dictionary<int, int> hash = new Dictionary<int, int>();
 
-                int s = 0; int e = nums.Length - 1;
-                while (s < e) 
-                {
-                    int sum = arr[s].value + arr[e].value;
-                    if (sum == target)
+                int sum = 0;
+
+                for(int i = 0; i < nums.Length; i++) { 
+                    sum = target - nums[i];
+                    if (hash.ContainsValue(nums[i])) 
                     {
-                        return new int[] { arr[s].index, arr[e].index };
-                        
+
+                        return new int[] {hash.FirstOrDefault(x => x.Value == nums[i]).Key, i};
                     }
-                    else if (sum > target)
+                    else
                     {
-                        e--;
-                    }
-                    else 
-                    {
-                        s++;
+                       hash.Add(i, sum);
                     }
                 }
                 return new int[0];
+
             }
         }
     }
