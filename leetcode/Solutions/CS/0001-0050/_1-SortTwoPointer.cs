@@ -12,27 +12,29 @@ namespace leetcode.Solutions.CS._0001_0050
         {
             public int[] TwoSum(int[] nums, int target)
             {
-                int[] result = new int[2];
+                var arr = nums.Select((value, index) => new { value, index })
+                    .OrderBy(x => x.value)
+                    .ToArray();
+
                 int s = 0; int e = nums.Length - 1;
-                Array.Sort(nums);
-                while (s <= nums.Length)
+                while (s < e)
                 {
-                    if (nums[s] + nums[e] > target)
+                    int sum = arr[s].value + arr[e].value;
+                    if (sum == target)
+                    {
+                        return new int[] { arr[s].index, arr[e].index };
+
+                    }
+                    else if (sum > target)
                     {
                         e--;
                     }
-                    else if (nums[s] + nums[e] < target)
+                    else
                     {
                         s++;
                     }
-                    else if (nums[s] + nums[e] == target) // ; <- por que sera que ele nao esta entrando no else ne
-                    {
-                        result[0] = s;
-                        result[1] = e;
-                        break;
-                    }
                 }
-                return result;
+                return new int[0];
             }
         }
     }

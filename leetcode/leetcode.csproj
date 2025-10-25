@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Solutions\CS\0001-0050\_1-BruteForce.cs" />
+    <Compile Include="Solutions\CS\0001-0050\_1-SortTwoPointer.cs" />
     <Compile Include="Solutions\CS\0001-0050\_1.cs" />
     <Compile Include="Solutions\CS\0551-0600\_557.cs" />
   </ItemGroup>

@@ -12,23 +12,29 @@ namespace leetcode.Solutions.CS._0001_0050
         {
             public int[] TwoSum(int[] nums, int target)
             {
-                int[] result = new int[2];
-                for (int i = 0; i < nums.Length; i++)
+                var arr = nums.Select((value, index) => new { value, index })
+                    .OrderBy(x => x.value)
+                    .ToArray();
+
+                int s = 0; int e = nums.Length - 1;
+                while (s < e) 
                 {
-                    for (int j = 0; j < nums.Length; j++)
+                    int sum = arr[s].value + arr[e].value;
+                    if (sum == target)
                     {
-                        if (j == i)
-                        {
-                            j++;
-                        }
-                        else if (nums[i] + nums[j] == target)
-                        {
-                            result[0] = j;
-                            result[1] = i;
-                        }
+                        return new int[] { arr[s].index, arr[e].index };
+                        
+                    }
+                    else if (sum > target)
+                    {
+                        e--;
+                    }
+                    else 
+                    {
+                        s++;
                     }
                 }
-                return result;
+                return new int[0];
             }
         }
     }

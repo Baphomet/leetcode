@@ -25,10 +25,11 @@ namespace leetcode.Solutions.CS._0001_0050
                         {
                             result[0] = j;
                             result[1] = i;
+                            return result;
                         }
                     }
                 }
-                return result;
+                return new int[0];
             }
         }
     }
