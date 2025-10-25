@@ -45,12 +45,42 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Solutions\CS\0551-0600\_557.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Solutions\CS\" />
+    <Folder Include="Solutions\CS\0001-0050\" />
+    <Folder Include="Solutions\CS\0051-0100\" />
+    <Folder Include="Solutions\CS\0101-0150\" />
+    <Folder Include="Solutions\CS\0151-0200\" />
+    <Folder Include="Solutions\CS\0201-0250\" />
+    <Folder Include="Solutions\CS\0251-0300\" />
+    <Folder Include="Solutions\CS\0301-0350\" />
+    <Folder Include="Solutions\CS\0351-0400\" />
+    <Folder Include="Solutions\CS\0401-0450\" />
+    <Folder Include="Solutions\CS\0451-0500\" />
+    <Folder Include="Solutions\CS\0501-0550\" />
+    <Folder Include="Solutions\CS\0601-0650\" />
+    <Folder Include="Solutions\CS\0651-0700\" />
+    <Folder Include="Solutions\CS\0701-0750\" />
+    <Folder Include="Solutions\CS\0751-0800\" />
+    <Folder Include="Solutions\CS\0801-0850\" />
+    <Folder Include="Solutions\CS\0851-0900\" />
+    <Folder Include="Solutions\CS\0901-0950\" />
+    <Folder Include="Solutions\CS\0951-1000\" />
+    <Folder Include="Solutions\CS\1001-1050\" />
+    <Folder Include="Solutions\CS\1051-1100\" />
+    <Folder Include="Solutions\CS\1101-1150\" />
+    <Folder Include="Solutions\CS\1151-1200\" />
+    <Folder Include="Solutions\CS\1201-1250\" />
+    <Folder Include="Solutions\CS\1251-1300\" />
+    <Folder Include="Solutions\CS\1301-1350\" />
+    <Folder Include="Solutions\CS\1351-1400\" />
+    <Folder Include="Solutions\CS\1401-1450\" />
+    <Folder Include="Solutions\CS\1451-1500\" />
+    <Folder Include="Solutions\CS\1501-1550\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
