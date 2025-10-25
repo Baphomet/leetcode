@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using leetcode.Solutions.CS;
 using leetcode.Solutions.CS._0551_0600;
+using leetcode.Solutions.CS._0001_0050;
 
 
 namespace leetcode
@@ -13,8 +14,9 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var solution = new _557.Solution();
-            solution.ReverseWords("Let's take LeetCode contest");
+            var solution = new _1.Solution();
+            int[] nums = { 3,3 };
+            solution.TwoSum(nums, 6);
         }
     }
 }

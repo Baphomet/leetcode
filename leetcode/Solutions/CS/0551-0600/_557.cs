@@ -31,8 +31,6 @@ namespace leetcode.Solutions.CS._0551_0600
                 }
                 result.Append(s.Substring(l, r - l).ToCharArray().Reverse().ToArray());
 
-                
-                Console.WriteLine(result.ToString());
                 return result.ToString();
             }
         }

@@ -45,13 +45,13 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Solutions\CS\0001-0050\_1.cs" />
     <Compile Include="Solutions\CS\0551-0600\_557.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Solutions\CS\0001-0050\" />
     <Folder Include="Solutions\CS\0051-0100\" />
     <Folder Include="Solutions\CS\0101-0150\" />
     <Folder Include="Solutions\CS\0151-0200\" />
