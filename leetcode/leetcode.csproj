@@ -48,6 +48,7 @@
     <Compile Include="Solutions\CS\0001-0050\_1-BruteForce.cs" />
     <Compile Include="Solutions\CS\0001-0050\_1-SortTwoPointer.cs" />
     <Compile Include="Solutions\CS\0001-0050\_1.cs" />
+    <Compile Include="Solutions\CS\0201-0250\_219.cs" />
     <Compile Include="Solutions\CS\0551-0600\_557.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -57,7 +58,6 @@
     <Folder Include="Solutions\CS\0051-0100\" />
     <Folder Include="Solutions\CS\0101-0150\" />
     <Folder Include="Solutions\CS\0151-0200\" />
-    <Folder Include="Solutions\CS\0201-0250\" />
     <Folder Include="Solutions\CS\0251-0300\" />
     <Folder Include="Solutions\CS\0301-0350\" />
     <Folder Include="Solutions\CS\0351-0400\" />

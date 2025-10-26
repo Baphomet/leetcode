@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using leetcode.Solutions.CS;
 using leetcode.Solutions.CS._0551_0600;
 using leetcode.Solutions.CS._0001_0050;
+using leetcode.Solutions.CS._0201_0250;
 
 
 namespace leetcode
@@ -14,9 +15,9 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var solution = new _1.Solution();
-            int[] nums = { 3, 2, 4 };
-            solution.TwoSum(nums, 6);
+            var solution = new _219.Solution();
+            int[] nums = { 1, 2, 3, 1 };
+            solution.ContainsNearbyDuplicate(nums, 3);
         }
     }
 }
