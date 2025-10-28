@@ -9,6 +9,7 @@ using leetcode.Solutions.CS._0001_0050;
 using leetcode.Solutions.CS._0201_0250;
 using leetcode.Solutions.CS._0351_0400;
 using leetcode.Solutions.CS._2101_2150;
+using leetcode.Solutions.CS._1501_1550;
 
 
 namespace leetcode
@@ -17,12 +18,9 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var solution = new _2125.Solution();
-            string[] bank = { "011001", 
-                              "000000", 
-                              "010100",
-                              "001000" };
-            solution.NumberOfBeams(bank);
+            var solution = new _1518.Solution();
+
+            solution.NumWaterBottles(100, 2);
             
         }
     }

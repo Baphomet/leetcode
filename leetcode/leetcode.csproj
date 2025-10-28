@@ -51,6 +51,7 @@
     <Compile Include="Solutions\CS\0201-0250\_219.cs" />
     <Compile Include="Solutions\CS\0351-0400\_387.cs" />
     <Compile Include="Solutions\CS\0551-0600\_557.cs" />
+    <Compile Include="Solutions\CS\1501-1550\_1518.cs" />
     <Compile Include="Solutions\CS\2101-2150\_2125.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -83,7 +84,6 @@
     <Folder Include="Solutions\CS\1351-1400\" />
     <Folder Include="Solutions\CS\1401-1450\" />
     <Folder Include="Solutions\CS\1451-1500\" />
-    <Folder Include="Solutions\CS\1501-1550\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
