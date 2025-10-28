@@ -20,7 +20,7 @@ namespace leetcode
         {
             var solution = new _1518.Solution();
 
-            solution.NumWaterBottles(100, 2);
+            solution.NumWaterBottles(9, 3);
             
         }
     }

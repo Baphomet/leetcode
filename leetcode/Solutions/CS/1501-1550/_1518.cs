@@ -14,40 +14,17 @@ namespace leetcode.Solutions.CS._1501_1550
         {
             public int NumWaterBottles(int numBottles, int numExchange)
             {
-                
+                int drunk = numBottles;
+                int empty = numBottles;
+                int reminder = 0;
 
-                int drinkedBottles = numBottles; 
-
-                int newBottles = numBottles / numExchange; 
-                drinkedBottles += newBottles;
-
-                int bottlesLeft = numBottles % numExchange;
-
-
-                bottlesLeft += newBottles;
-                if (numBottles % numExchange != 0) 
-                {
-                    newBottles = bottlesLeft / numExchange;
-                    drinkedBottles += newBottles;
-                    bottlesLeft = (bottlesLeft % numExchange) + newBottles;
-                    while (bottlesLeft >= numExchange) 
-                    {
-                        bottlesLeft = bottlesLeft / numExchange;
-                        drinkedBottles += bottlesLeft;
-                    }
-                    return drinkedBottles;
+                while ((empty / numExchange) >= 1) 
+                { 
+                reminder = empty % numExchange;
+                drunk = drunk + (empty / numExchange);
+                empty = (empty / numExchange) + reminder;
                 }
-                if (numBottles % numExchange == 0) 
-                {
-                    while (bottlesLeft >= numExchange) 
-                    {
-                    newBottles = bottlesLeft / numExchange;
-                    bottlesLeft = (bottlesLeft - numExchange) + newBottles;
-                    drinkedBottles += newBottles;
-                    }
-                    return drinkedBottles;
-                }
-                 return drinkedBottles;
+                return drunk;
             }
             
         }
