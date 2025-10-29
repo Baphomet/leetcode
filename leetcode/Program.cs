@@ -10,6 +10,7 @@ using leetcode.Solutions.CS._0201_0250;
 using leetcode.Solutions.CS._0351_0400;
 using leetcode.Solutions.CS._2101_2150;
 using leetcode.Solutions.CS._1501_1550;
+using leetcode.Solutions.CS._3351_3400;
 
 
 namespace leetcode
@@ -18,9 +19,9 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var solution = new _1518.Solution();
+            var solution = new _3370.Solution();
 
-            solution.NumWaterBottles(9, 3);
+            solution.SmallestNumber(7);
             
         }
     }

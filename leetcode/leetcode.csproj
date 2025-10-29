@@ -53,6 +53,7 @@
     <Compile Include="Solutions\CS\0551-0600\_557.cs" />
     <Compile Include="Solutions\CS\1501-1550\_1518.cs" />
     <Compile Include="Solutions\CS\2101-2150\_2125.cs" />
+    <Compile Include="Solutions\CS\3351-3400\_3370.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
