@@ -11,6 +11,8 @@ using leetcode.Solutions.CS._0351_0400;
 using leetcode.Solutions.CS._2101_2150;
 using leetcode.Solutions.CS._1501_1550;
 using leetcode.Solutions.CS._3351_3400;
+using leetcode.Solutions.CS._0001_0050;
+
 
 
 namespace leetcode
@@ -19,9 +21,9 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var solution = new _3370.Solution();
+            var solution = new _13.Solution();
 
-            solution.SmallestNumber(7);
+            solution.RomanToInt("MCMXCIV");
             
         }
     }
