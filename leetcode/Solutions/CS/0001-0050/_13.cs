@@ -25,36 +25,32 @@ namespace leetcode.Solutions.CS._0001_0050
                 int sum = 0;
                 for (int i = 0; i < arr.Length; i++) 
                 {
-                    if (i + 1 <= arr.Length - 1)
+                    if (i + 1 < arr.Length)
                     {
                         if (arr[i] == 'I' && (arr[i + 1] == 'V' || arr[i + 1] == 'X'))
                         {
                             sum += map[arr[i + 1]] - map[arr[i]];
                             i++;
+                            continue;
                         }
 
                         else if (arr[i] == 'X' && (arr[i + 1] == 'L' || arr[i + 1] == 'C'))
                         {
                             sum += map[arr[i + 1]] - map[arr[i]];
+                            i++;
+                            continue;
                         }
 
                         else if (arr[i] == 'C' && (arr[i + 1] == 'D' || arr[i + 1] == 'M'))
                         {
                             sum += map[arr[i + 1]] - map[arr[i]];
-                        }
-                        else
-                        {
-                            sum += map[arr[i]];
+                            i++;
+                            continue;
                         }
                     }
-                    else
-                    {
-                        sum += map[arr[i]];
-                    }
+                    sum += map[arr[i]];
                 }
-                Console.WriteLine(sum);
                 return sum; 
-            
             }
         }
     }
